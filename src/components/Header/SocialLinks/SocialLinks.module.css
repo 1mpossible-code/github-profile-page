@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+}
+
+.link {
+    padding: 0 10px;
+    font-size: 30px;
+}
+
+.link:last-child {
+    padding-right: 0;
+}

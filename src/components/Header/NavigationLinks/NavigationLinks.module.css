@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    font-size: 20px;
+    padding: 0 40px;
+}
+
+.link {
+    margin: 0 30px;
+}
+
+.link:last-child {
+    margin: 0;
+}
