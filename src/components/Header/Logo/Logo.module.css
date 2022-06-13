@@ -1,0 +1,10 @@
+.logo {
+    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+    font-size: 30px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins", "DMSans", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
