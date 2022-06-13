@@ -5,6 +5,12 @@
 .link {
     padding: 0 10px;
     font-size: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #bbbbbb;
 }
 
 .link:last-child {
