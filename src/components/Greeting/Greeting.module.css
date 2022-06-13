@@ -1,0 +1,45 @@
+.greeting {
+    display: flex;
+    justify-content: space-between;
+    margin: 205px 0;
+}
+
+.imageBorder {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 230px;
+    border: 9px solid transparent;
+    background-clip: border-box;
+}
+
+.imageBorder::after {
+    position: absolute;
+    top: -9px;
+    bottom: -9px;
+    right: -9px;
+    left: -9px;
+    content: "";
+    z-index: -1;
+    border-radius: 230px;
+    background: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%);
+}
+
+.image {
+    width: 100%;
+    border-radius: 230px;
+}
+
+.text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    margin-top: 40px;
+    line-height: 70px;
+}
+
+.gradientText {
+    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
