@@ -7,4 +7,9 @@
     font-weight: 700;
     cursor: pointer;
     user-select: none;
+    transition: .3s;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
