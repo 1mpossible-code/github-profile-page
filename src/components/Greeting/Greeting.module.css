@@ -1,7 +1,7 @@
 .greeting {
     display: flex;
     justify-content: space-between;
-    margin: 205px 0;
+    margin-top: 205px;
 }
 
 .imageBorder {
@@ -31,6 +31,7 @@
 }
 
 .text {
+    color: #42446E;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 58px;

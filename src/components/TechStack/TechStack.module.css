@@ -1,0 +1,20 @@
+.container {
+    margin-top: 300px;
+
+}
+
+.label {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #42446E;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.underLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}

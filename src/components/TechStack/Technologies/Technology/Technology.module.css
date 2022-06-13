@@ -1,0 +1,19 @@
+.container {
+    transition: .3s;
+    width: 120px;
+    height: 120px;
+}
+
+.container:hover {
+    transform: scale(1.1);
+}
+
+.imageWrapper {
+    height: 100%;
+    display: flex;
+}
+
+.image {
+    width: 120px;
+    align-self: center;
+}
