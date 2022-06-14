@@ -6,8 +6,10 @@
 
 .nav {
     display: flex;
+    align-items: center;
 }
 
 .navLinks {
-    align-self: center;
+    padding: 0 40px;
+    font-size: 20px;
 }

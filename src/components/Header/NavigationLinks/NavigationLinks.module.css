@@ -1,7 +1,5 @@
 .nav {
     display: flex;
-    font-size: 20px;
-    padding: 0 40px;
 }
 
 .link {
@@ -13,6 +11,10 @@
 
 .link:hover {
     color: #bbbbbb;
+}
+
+.link:first-child {
+    margin-left: 0;
 }
 
 .link:last-child {

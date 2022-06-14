@@ -4,6 +4,7 @@ import classes from './Main.module.css';
 import Greeting from '../components/Greeting/Greeting';
 import TechStack from '../components/TechStack/TechStack';
 import Projects from '../components/Projects/Projects';
+import Footer from '../components/Footer/Footer';
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
             <Greeting/>
             <TechStack/>
             <Projects/>
+            <Footer/>
         </main>
     )
 }
