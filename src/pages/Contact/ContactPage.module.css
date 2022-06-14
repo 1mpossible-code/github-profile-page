@@ -1,0 +1,15 @@
+.container {
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 58px;
+    text-align: center;
+    color: #1E0E62;
+}
+
+.email {
+    cursor: pointer;
+    background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
