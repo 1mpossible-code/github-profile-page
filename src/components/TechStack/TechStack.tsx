@@ -6,7 +6,8 @@ import Heading from '../common/Heading/Heading';
 const TechStack = () => {
     return (
         <section className={classes.container}>
-            <Heading title={'My Tech Stack'} description={'Technologies I’ve been working with recently'}/>
+            <Heading title={'My Tech Stack'} description={'Technologies I’ve been working with recently'}
+                     centered={true}/>
             <Technologies/>
         </section>
     );
