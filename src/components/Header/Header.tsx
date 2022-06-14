@@ -6,7 +6,7 @@ import Logo from './Logo/Logo';
 
 const Header = () => {
     return (
-        <header className={classes.header}>
+        <header className={classes.header} id="header">
             <Logo/>
             <div className={classes.nav}>
                 <div className={classes.navLinks}>

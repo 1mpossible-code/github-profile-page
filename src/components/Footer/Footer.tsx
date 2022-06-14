@@ -4,12 +4,15 @@ import SocialLinks from '../Header/SocialLinks/SocialLinks';
 import classNames from 'classnames';
 import NavigationLinks from '../Header/NavigationLinks/NavigationLinks';
 import Links from './Links/Links';
+import {Link} from 'react-scroll'
 
 const Footer = () => {
     return (
         <section className={classes.container}>
             <div className={classes.upper}>
-                <div className={classes.logo}>1mpossible-code</div>
+                <div className={classes.logo}>
+                    <Link to="header" smooth={true}>1mpossible-code</Link>
+                </div>
                 <div className={classes.nav}>
                     <Links tel="+91 12345 09876" email="info@example.com"></Links>
                     <div className={classNames(classes.link, classes.socialLinks)}>
