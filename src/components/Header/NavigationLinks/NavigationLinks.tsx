@@ -8,10 +8,10 @@ const NavigationLinks = () => {
     const location = useLocation();
 
     useEffect(() => {
-        scroll()
+        (async () => await scroll())()
     }, [location.hash]);
 
-    const scroll = () => {
+    const scroll = async () => {
         switch (location.hash) {
             case '#top':
                 document.getElementById('top')?.scrollIntoView({behavior: 'smooth'})
