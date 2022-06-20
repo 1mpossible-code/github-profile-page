@@ -1,35 +1,40 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import classes from './NavigationLinks.module.css'
-import {Link, useLocation} from 'react-router-dom';
-import {Link as Scroll} from 'react-scroll'
+import {Link, useLocation, useNavigate} from 'react-router-dom';
 
 const NavigationLinks = () => {
 
-    const location = useLocation()
-    const [isScrolling, setIsScrolling] = useState(location.pathname == '/');
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
-        if (location.pathname == '/') {
-            setIsScrolling(true)
-        } else {
-            setIsScrolling(false)
+        scroll()
+    }, [location.hash]);
+
+    const scroll = () => {
+        switch (location.hash) {
+            case '#header':
+                document.getElementById('header')?.scrollIntoView({behavior: 'smooth'})
+                navigate(location.pathname)
+                break;
+            case '#stack':
+                document.getElementById('stack')?.scrollIntoView({behavior: 'smooth'})
+                break;
+            case '#projects':
+                document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})
+                break;
+            default:
+                navigate(location.pathname)
         }
-    }, [location]);
+    }
 
     return (
         <nav className={classes.nav}>
-            <div className={classes.link}>
-                {isScrolling ?
-                    <Scroll to={'header'} smooth={true}>Home</Scroll>
-                    :
-                    <Link className="link" to="/">Home</Link>
-                }
-
-            </div>
-            <div className={classes.link}><Link className="link" to="/about">About</Link></div>
-            <div className={classes.link}><Scroll to={'stack'} smooth={true}>Tech Stack</Scroll></div>
-            <div className={classes.link}><Scroll to={'projects'} smooth={true}>Projects</Scroll></div>
-            <div className={classes.link}><Link className="link" to="/contact">Contact</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/#header">Home</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/about#header">About</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/#stack">Tech Stack</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/#projects">Projects</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/contact#header">Contact</Link></div>
         </nav>
     );
 };
