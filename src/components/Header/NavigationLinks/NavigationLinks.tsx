@@ -27,8 +27,8 @@ const NavigationLinks = () => {
 
             </div>
             <div className={classes.link}><Link className="link" to="/about">About</Link></div>
-            <div className={classes.link}><Link className="link" to="/stack">Tech Stack</Link></div>
-            <div className={classes.link}><Link className="link" to="/projects">Projects</Link></div>
+            <div className={classes.link}><Scroll to={'stack'} smooth={true}>Tech Stack</Scroll></div>
+            <div className={classes.link}><Scroll to={'projects'} smooth={true}>Projects</Scroll></div>
             <div className={classes.link}><Link className="link" to="/contact">Contact</Link></div>
         </nav>
     );

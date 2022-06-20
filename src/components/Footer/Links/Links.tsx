@@ -7,19 +7,11 @@ type OwnProps = {
 }
 
 const Links: React.FC<OwnProps> = (props) => {
-
-    const handleTelClick = () => {
-        window.location.href = `tel:${props.tel}`
-    }
-
-    const handleEmailClick = () => {
-        window.location.href = `mailto:${props.email}`
-    }
-
     return (
         <>
-            <div className={classes.link} onClick={handleTelClick}>{props.tel}</div>
-            <div className={classes.link} onClick={handleEmailClick}>{props.email}</div>
+            <div className={classes.link}><a href={`tel:${props.tel}`}>{props.tel}</a></div>
+            <div className={classes.link}><a href={`mailto:${props.email}`}>{props.email}</a>
+            </div>
         </>
     );
 };

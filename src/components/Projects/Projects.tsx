@@ -5,7 +5,7 @@ import ProjectList from './ProjectList/ProjectList';
 
 const Projects = () => {
     return (
-        <section className={classes.container}>
+        <section className={classes.container} id="projects">
             <Heading title={'Projects'} description={'Things I’ve built so far'} centered={true}/>
             <ProjectList/>
         </section>
