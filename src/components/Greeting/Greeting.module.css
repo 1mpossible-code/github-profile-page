@@ -36,11 +36,82 @@
     font-weight: 700;
     font-size: 58px;
     margin-top: 40px;
-    line-height: 70px;
 }
 
 .gradientText {
     background: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1250px) {
+    .text {
+        font-size: 44px;
+    }
+
+    .imageBorder {
+        width: 290px;
+        height: 290px;
+    }
+
+    .greeting {
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text {
+        font-size: 32px;
+    }
+
+    .imageBorder {
+        width: 230px;
+        height: 230px;
+    }
+
+    .greeting {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 20px;
+    }
+
+    .imageBorder {
+        width: 180px;
+        height: 180px;
+    }
+
+    .greeting {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .greeting {
+        margin-top: 100px;
+    }
+
+    .greeting {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imageWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 36px;
+    }
+
+    .imageBorder {
+        width: 70%;
+        height: auto;
+    }
 }

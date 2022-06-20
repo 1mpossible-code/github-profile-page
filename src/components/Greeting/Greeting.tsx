@@ -11,7 +11,7 @@ const Greeting = () => {
                 <div className={classes.gradientText}>1mpossible-code</div>
                 <div>And I am a web developer</div>
             </div>
-            <div>
+            <div className={classes.imageWrapper}>
                 <div className={classes.imageBorder}>
                     <img src={photo} alt="" className={classes.image}/>
                 </div>
