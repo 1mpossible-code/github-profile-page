@@ -16,3 +16,37 @@
 .link:last-child {
     padding-right: 0;
 }
+
+@media screen and (max-width: 1250px) {
+    .link {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .link {
+        font-size: 20px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 36px;
+        padding: 0 30px;
+    }
+
+    .link:last-child {
+        padding: 0 30px;
+    }
+}
