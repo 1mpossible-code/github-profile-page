@@ -13,8 +13,8 @@ const NavigationLinks = () => {
 
     const scroll = () => {
         switch (location.hash) {
-            case '#header':
-                document.getElementById('header')?.scrollIntoView({behavior: 'smooth'})
+            case '#top':
+                document.getElementById('top')?.scrollIntoView({behavior: 'smooth'})
                 navigate(location.pathname)
                 break;
             case '#stack':
@@ -30,11 +30,11 @@ const NavigationLinks = () => {
 
     return (
         <nav className={classes.nav}>
-            <div className={classes.link}><Link onClick={scroll} to="/#header">Home</Link></div>
-            <div className={classes.link}><Link onClick={scroll} to="/about#header">About</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/#top">Home</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/about#top">About</Link></div>
             <div className={classes.link}><Link onClick={scroll} to="/#stack">Tech Stack</Link></div>
             <div className={classes.link}><Link onClick={scroll} to="/#projects">Projects</Link></div>
-            <div className={classes.link}><Link onClick={scroll} to="/contact#header">Contact</Link></div>
+            <div className={classes.link}><Link onClick={scroll} to="/contact#top">Contact</Link></div>
         </nav>
     );
 };

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Logo = () => {
     return (
         <div className={classes.logo}>
-            <Link className="link" to={'/#header'}>1mpossible-code</Link>
+            <Link className="link" to={'/#top'}>1mpossible-code</Link>
         </div>
     );
 };

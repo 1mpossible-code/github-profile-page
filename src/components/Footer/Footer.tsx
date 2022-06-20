@@ -11,7 +11,7 @@ const Footer = () => {
         <section className={classes.container}>
             <div className={classes.upper}>
                 <div className={classes.logo}>
-                    <Link to="/#header">1mpossible-code</Link>
+                    <Link to="/#top">1mpossible-code</Link>
                 </div>
                 <div className={classes.nav}>
                     <Links tel="+48 516 495950" email="max.yemelianenko@gmail.com"></Links>

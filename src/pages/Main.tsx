@@ -12,6 +12,7 @@ import Footer from '../components/Footer/Footer';
 const Main = () => {
     return (
         <main className={classes.container}>
+            <div className={classes.top} id="top"></div>
             <HashRouter>
                 <Header/>
                 <Routes>
