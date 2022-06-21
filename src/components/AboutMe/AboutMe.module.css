@@ -9,3 +9,16 @@
     font-weight: 400;
     font-size: 18px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 120px auto 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .description {
+        font-size: 14px;
+    }
+}

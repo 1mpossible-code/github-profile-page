@@ -52,3 +52,38 @@
     align-items: center;
     padding: 0 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .geo {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 16px;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .type {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: 13px;
+    }
+
+    .bottom {
+        font-size: 10px;
+    }
+}
