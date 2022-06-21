@@ -1,9 +1,9 @@
 .container {
     width: 375px;
-    height: 570px;
     background: #FFFFFF;
     box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    padding-bottom: 20px;
 }
 
 .imageContainer {
@@ -35,7 +35,6 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 26px;
     margin-bottom: 10px;
 }
 
@@ -80,4 +79,128 @@
 
 .link .text {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 1250px) {
+    .container {
+        width: 290px;
+        padding-bottom: 10px;
+    }
+
+    .imageContainer {
+        height: 210px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .link .icon {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+
+    .stack .technology {
+        font-size: 11px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+
+    .stack {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .imageContainer {
+        height: 180px;
+    }
+
+    .container {
+        width: 240px;
+    }
+
+    .stack {
+        font-size: 11px;
+    }
+
+    .stack .technology {
+        font-size: 10px;
+    }
+
+    .description {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 375px;
+        width: 100%;
+    }
+
+    .imageContainer {
+        height: 260px;
+    }
+
+    .content {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .stack {
+        font-size: 16px;
+    }
+
+    .stack .technology {
+        font-size: 14px;
+    }
+
+    .link {
+        font-size: 16px;
+    }
+
+    .link .icon {
+        font-size: 20px;
+    }
 }
