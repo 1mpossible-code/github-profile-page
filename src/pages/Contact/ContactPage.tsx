@@ -3,7 +3,7 @@ import classes from './ContactPage.module.css';
 
 const ContactPage = () => {
 
-    const email = 'max.yemelianenko@gmail.com';
+    const email = process.env.REACT_APP_EMAIL;
 
     return (
         <section className={classes.container}>

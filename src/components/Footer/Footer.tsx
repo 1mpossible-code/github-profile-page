@@ -14,7 +14,7 @@ const Footer = () => {
                     <Link to="/#top">1mpossible-code</Link>
                 </div>
                 <div className={classes.nav}>
-                    <Links tel="+48 516 495950" email="max.yemelianenko@gmail.com"></Links>
+                    <Links tel={`${process.env.REACT_APP_TEL}`} email={`${process.env.REACT_APP_EMAIL}`}></Links>
                     <div className={classNames(classes.link, classes.socialLinks)}>
                         <SocialLinks/>
                     </div>
